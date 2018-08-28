@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人信息</title>
+		<script src="static/js/resetRem.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/css/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+	</head>
+	<body>
+		<div class="container">
+			<p>请输入身份证号</p>
+			<input type="text" id="idcard" placeholder="请输入身份证号"/>
+			<p>请上传身份证正面照片</p>
+			<div class="img-wrapper">
+				<div id="up">
+					<div></div>
+				</div>
+				<div id="idcard-img"></div>
+				<div class="weui-uploader__input-box">
+                    <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                </div>
+			</div>
+			<p>国外就读学校名称</p>
+			<input type="text" id="university" placeholder="请输入身份证号"/>
+			<button id="btn">提交信息</button>
+		</div>
+	    <script src="static/js/zpeto.js"></script>
+        <script src="static/js/weui.min.js"></script>
+	</body>
+</html>
