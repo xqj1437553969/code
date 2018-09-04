@@ -252,7 +252,7 @@ export default {
   	     	var that = this;
   	     	axios({
 				  method: 'post',
-				  url:'../center/getPackageByPhone',
+				  url:that.baseUrl+'/center/getPackageByPhone',
 				  data:querystring.stringify({
 				  	phoneNo:that.value + that.ruleForm.phone
 				  })
@@ -362,7 +362,7 @@ export default {
 	  	    	var that = this;
 	  	     	axios({
 					  method: 'post',
-					  url:'../center/packageInfo',
+					  url:that.baseUrl+'/center/packageInfo',
 					  data:querystring.stringify({
 					  	  operatorId:that.operatorId,
 				  		  packageId:that.orgpackageId,
@@ -508,7 +508,7 @@ export default {
 	      		var that = this;
 	  	     	axios({
 					  method: 'post',
-					  url:'../center/rechargeOrder',
+					  url:that.baseUrl+'/center/rechargeOrder',
 					  data:querystring.stringify(sendData)
 				  })
 		      	  .then(function(r){

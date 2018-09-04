@@ -253,7 +253,7 @@ export default {
 	      	 var that = this;
 	      	 axios({
 				  method: 'post',
-				  url:'../center/buyPackage',
+				  url:that.baseUrl+'/center/buyPackage',
 				  data:querystring.stringify({
 				  	orderSource:1
 				  })
@@ -284,7 +284,7 @@ export default {
 	      	  var that = this;
 	      	  axios({
 				  method: 'post',
-				  url:'../center/checkCardNo',
+				  url:that.baseUrl+'/center/checkCardNo',
 				  data:querystring.stringify({
 				  	 cardNo:cardNo
 				  })
@@ -380,7 +380,7 @@ export default {
 	      	  var that = this;
 	      	  axios({
 				  method: 'post',
-				  url:'../center/checkPhone',
+				  url:that.baseUrl+'/center/checkPhone',
 				  data:querystring.stringify({
 				  	 phone:'86'+ that.ruleForm.phone
 				  })
@@ -433,7 +433,7 @@ export default {
   		     	 var that = this;
 	  		     axios({
 					  method: 'post',
-					  url:'../center/captcha',
+					  url:that.baseUrl+'/center/captcha',
 					  data:querystring.stringify({
 					      phone:'86'+that.ruleForm.phone
 					  })
@@ -571,7 +571,7 @@ export default {
   	    	 var that = this;
     	     axios({
 				  method: 'post',
-				  url:'../center/placeOrder',
+				  url:that.baseUrl+'/center/placeOrder',
 				  data:querystring.stringify(that.submsg)
 		      })
 		  	  .then(function(r){

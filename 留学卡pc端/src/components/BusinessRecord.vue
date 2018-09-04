@@ -105,7 +105,7 @@ export default {
   	 	   var that = this;
   	       axios({
 			  method: 'post',
-			  url:'../center/packageOrderRecord',
+			  url:that.baseUrl+'/center/packageOrderRecord',
 			  data:querystring.stringify({
 			  	 studentId:that.student.studentId 
 			  })
@@ -163,7 +163,7 @@ export default {
   	 	 var that = this;
   	     axios({
 			  method: 'post',
-			  url:'../center/updateActivateDate',
+			  url:that.baseUrl+'/center/updateActivateDate',
 			  data:querystring.stringify({
 			  	 orderNo:that.orderNo,
 			  	 activateDate:that.pickerDate
@@ -211,7 +211,7 @@ export default {
   	 	  var that = this;
   	 	  axios({
 			  method: 'post',
-			  url:'../center/continuePay',
+			  url:that.baseUrl+'/center/continuePay',
 			  data:querystring.stringify({
 			  	 payType:1,
 			  	 orderNo:that.orderNo
@@ -265,7 +265,7 @@ export default {
   	 	var that = this;
   	 	axios({
 			  method: 'post',
-			  url:'../center/cancelOrder',
+			  url:that.baseUrl+'/center/cancelOrder',
 			  data:querystring.stringify({
 			  	 orderNo:that.orderNo
 			  })

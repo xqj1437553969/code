@@ -20,7 +20,7 @@
 		         </li>
 		         <li>
 		            <p class="title">个人中心</p>
-		            <p class="other"><router-link to="/information/numberinfo">号码信息</router-link></p>
+		            <!--<p class="other"><router-link to="/information/numberinfo">号码信息</router-link></p>-->
 		            <p class="other"><router-link to="/information/cardrecord">领卡记录</router-link></p>
 		            <p class="other"><router-link to="/information/businessrecord">开通记录</router-link></p>
 		            <p class="other"><router-link to="/information/rechargerecord">充值记录</router-link></p>
@@ -60,11 +60,12 @@
 	ul{
 		width:684px;
 		padding-top:20px;
+		padding-bottom:60px;
 		display:flex;
 		justify-content:space-between;
 	}
 	.about-us{
-		height:175px;
+		height:170px;
 		display:flex;
 	}
 	p.title{
@@ -74,7 +75,7 @@
 		border-bottom:1px solid #999;
 	}
 	p.other{
-		margin-top:11px;
+		margin-top:13px;
 		font-size:16px;
 	}
 	.qr-code{

@@ -57,7 +57,7 @@ export default {
   	 	   var that = this;
   	       axios({
 			  method: 'post',
-			  url:'../center/orderRecord',
+			  url:that.baseUrl+'/center/orderRecord',
 			  data:querystring.stringify({
 			  	 studentId:that.student.studentId
 			  })
@@ -113,7 +113,7 @@ export default {
   	 	var that = this;
   	 	axios({
 			  method: 'post',
-			  url:'../center/cancelFreeCard',
+			  url:that.baseUrl+'/center/cancelFreeCard',
 			  data:querystring.stringify({
 			  	 recordId:that.orderId
 			  })

@@ -1,7 +1,11 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import App from './App'
+import router from './router'
 //import ElementUI from 'element-ui'
+//import 'element-ui/lib/theme-chalk/index.css'
+//Vue.use(ElementUI);
 import {
   Dialog,
   Input,
@@ -20,10 +24,6 @@ import {
   Collapse,
   CollapseItem
 } from 'element-ui';
-//import 'element-ui/lib/theme-chalk/index.css'
-import App from './App'
-import router from './router'
-//Vue.use(ElementUI);
 Vue.use(Dialog);
 Vue.use(Input);
 Vue.use(Select);
@@ -33,7 +33,6 @@ Vue.use(Button);
 Vue.use(DatePicker);
 Vue.use(Form);
 Vue.use(FormItem);
-//Vue.use(Tag);
 Vue.use(Upload);
 Vue.use(Cascader);
 Vue.use(Collapse);
@@ -61,8 +60,11 @@ Vue.filter('formattotime', function (value) {
 Vue.filter('formattodate', function (value) {
      return formatToDate(value)
 })
-Vue.config.productionTip = false;
 window.eventBus = new Vue();
+const {baseUrl,getImgUrl} = require("./api/api.js");
+Vue.prototype.baseUrl = baseUrl;
+Vue.prototype.getImgUrl = getImgUrl;
+Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

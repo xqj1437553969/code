@@ -34,7 +34,7 @@ export default {
 	  	  }
 	  	  var that = this;
 	  	  eventBus.$on('login',function(r){
-	  	  	 console.log(r);
+//	  	  	 console.log(r);
 	  	  	 that.loginshow = r.loginshow;
 	  	  	 that.loginname = r.loginname;
 	  	  	 sessionStorage.setItem('user',JSON.stringify(r));

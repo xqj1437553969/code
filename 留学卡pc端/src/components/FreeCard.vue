@@ -170,7 +170,7 @@ export default {
    	      	 this.realregion = CodeToText[this.ruleForm.region[0]]+''+CodeToText[this.ruleForm.region[1]]+''+CodeToText[this.ruleForm.region[2]]
    	      },
 	      submitForm(formName) {
-	      	console.log(this.operatorId);
+//	      	console.log(this.operatorId);
 	      	if(!this.operatorId){
 	      		return this.$message({
 		          message:'请选择电话卡类型',
@@ -207,7 +207,7 @@ export default {
 	      	  var that = this;
 	      	  axios({
 				  method: 'post',
-				  url:'../center/cardOrder',
+				  url:that.baseUrl+'/center/cardOrder',
 				  data:querystring.stringify({
 				  	 agentId:agentId,
 				     operatorId:operatorId,
@@ -252,7 +252,7 @@ export default {
   		     	 var that = this;
 	  		     axios({
 					  method: 'post',
-					  url:'../center/captcha',
+					  url:that.baseUrl+'/center/captcha',
 					  data:querystring.stringify({
 					      phone:phone
 					  })

@@ -12,7 +12,7 @@
 			  	<el-upload
 				  class="upload-demo"
 				  :disabled="perfect"
-				  action="../center/uploadImg"
+				  action="baseUrl+'/center/uploadImg'"
 				  name="img"
 				  :show-file-list="showlist"
 				   multiple
@@ -98,7 +98,7 @@
 //     	  console.log(this.student)
        	  this.perfect = this.student.perfect;
        	  if(this.student.perfect){
-       	  	  this.imgsrc = this.student.idCardPic;
+       	  	  this.imgsrc = this.getImgUrl + this.student.idCardPic;
 	       	  this.ruleForm.idcard = this.student.idCardNo;
 	       	  this.ruleForm.university = this.student.university;
        	  }
@@ -159,7 +159,7 @@
   	      var that = this;
       	  axios({
 			  method: 'post',
-			  url:'../center/updateInformation',
+			  url:that.baseUrl+'/center/updateInformation',
 			  data:querystring.stringify({
 			  	 studentId:that.studentId,
 			  	 idCardNo:that.ruleForm.idcard,

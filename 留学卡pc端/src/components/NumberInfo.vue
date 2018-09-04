@@ -57,7 +57,7 @@ export default {
 //	 	   var that = this;
 //	       axios({
 //			  method: 'post',
-//			  url:'../center/rechargeRecord',
+//			  url:that.baseUrl+'/center/rechargeRecord',
 //			  data:querystring.stringify({
 //			  	 type:0,
 //			  	 studentId:that.student.studentId 

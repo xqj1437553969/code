@@ -113,7 +113,7 @@ export default {
   		     	 var that = this;
 	  		     axios({
 					  method: 'post',
-					  url:'../center/captcha',
+					  url:that.baseUrl+'/center/captcha',
 					  data:querystring.stringify({
 					      phone:that.value+that.ruleForm.phone
 					  })
@@ -173,7 +173,7 @@ export default {
 	 	  var that = this;
           axios({
 			  method: 'post',
-			  url:'../center/login',
+			  url:that.baseUrl+'/center/login',
 			  data:querystring.stringify({
 			  	  orderSource:1,
 			      phone:that.value+that.ruleForm.phone,

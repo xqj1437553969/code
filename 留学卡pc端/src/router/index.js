@@ -15,7 +15,7 @@ const Company = () => import('@/components/Company')
 const ContactUs = () => import('@/components/ContactUs')
 const Problem = () => import('@/components/Problem')
 const User = () => import('@/components/User')
-const NumberInfo = () => import('@/components/NumberInfo')
+//const NumberInfo = () => import('@/components/NumberInfo')
 const CardRecord = () => import('@/components/CardRecord')
 const BusinessRecord = () => import('@/components/BusinessRecord')
 const RechargeRecord = () => import('@/components/RechargeRecord')
@@ -101,11 +101,11 @@ export default new Router({
 				      name: 'User',
 				      component:User
 				   },
-				    {
-				    	path: 'numberinfo',
-				      name: 'NumberInfo',
-				      component:NumberInfo
-				   },
+//				    {
+//				    	path: 'numberinfo',
+//				      name: 'NumberInfo',
+//				      component:NumberInfo
+//				   },
 				   {
 				    	path: 'cardrecord',
 				      name: 'CardRecord',

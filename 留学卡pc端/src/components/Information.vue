@@ -3,7 +3,7 @@
 		<div class="information">
 		    <div class="left">
 		    	<router-link to="/information/user">个人信息</router-link>
-		    	<router-link to="/information/numberinfo">号码信息</router-link>
+		    	<!--<router-link to="/information/numberinfo">号码信息</router-link>-->
 				<router-link to="/information/cardrecord">领卡记录</router-link>
 				<router-link to="/information/businessrecord">开通记录</router-link>
 				<router-link to="/information/rechargerecord">充值记录</router-link>

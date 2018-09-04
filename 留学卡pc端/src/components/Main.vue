@@ -89,7 +89,7 @@ export default {
 	 	  var that = this;
 	  	  axios({
 			  method: 'post',
-			  url:'../center/cardOperator',
+			  url:that.baseUrl+'/center/cardOperator',
 			  data:querystring.stringify({
 			  	  orderSource:1
 			  })
