@@ -1,29 +1,25 @@
 <template>
   <div id="app">
-    <pub-header></pub-header>
-    <pub-headermenu></pub-headermenu>
-    <router-view/>
-    <pub-footer></pub-footer>
+     <router-view/>
   </div>
 </template>
 
 <script>
-import pubHeader from '@/components/publicComponents/Header'
-import pubHeadermenu from '@/components/publicComponents/Headermenu'
-import pubFooter from '@/components/publicComponents/Footer'
 export default {
-  name: 'App',
-  components:{
-  	pubHeader,
-  	pubHeadermenu,
-  	pubFooter
-  }
+  name: 'App'
 }
 </script>
 
 <style>
 @import "./style/reset.css";
-#app {
+body{
+	background:#f8f8f8;
+}
+#app{
   width:100%;
+  height:100%;
+}
+.swiper-pagination-bullet-active{
+	background:#409eff;
 }
 </style>
