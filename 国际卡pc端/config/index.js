@@ -8,9 +8,16 @@ module.exports = {
   dev: {
 
     // Paths
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: 'stat',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+    	  '/api': {
+            target: 'http://order.aichongyue.com',
+            pathRewrite:{'^/api':''},
+            secure: false,
+            changeOrigin:true
+          }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -42,7 +49,7 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: 'stat',
     assetsPublicPath: './',
 
     /**
